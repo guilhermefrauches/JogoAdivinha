@@ -1,12 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
+import static Colors.Colors.*;
 public class Main {
-
-    public static final String GREEN = "\u001B[32m";
-    public static final String RED = "\u001B[31m";
-    public static final String PURPLE = "\u001B[35m";
-    public static final String BLUE = "\u001B[34m";
-    public static final String RESET = "\u001B[0m";
 
     public static void main(String[] args) {
         Random random = new Random();
@@ -16,7 +11,7 @@ public class Main {
         boolean acertou = false;
 
         while (!acertou) {
-            System.out.println( PURPLE + "Digite um número: " + RESET);
+            System.out.println(PURPLE + "Digite um número: " + RESET);
             palpite = sc.nextInt();
 
             if (palpite == numeroSecreto) {
